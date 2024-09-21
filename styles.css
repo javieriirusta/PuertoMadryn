@@ -1,0 +1,69 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    max-width: 100%;
+    margin: 0;
+    opacity: 0;
+  transition: opacity 0.5s;
+}
+header {
+text-align: center;
+background-color: #0b96f3;
+color: white;
+padding: 10px;
+}
+/*Defino la seccion de flexbox*/
+section {
+display: flex;
+justify-content: space-around;
+padding: 20px;
+gap: 20px;
+}
+h2 {
+text-align: center;
+}
+img {
+    max-width: 100%;
+}
+/*Defino Articulos */
+.art1, .art2, .art3 {
+    color: white;
+    margin: 10px;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  text-align: center;
+  min-width: 200px;
+  transition: all 0.3s ease;
+}
+.art1:hover, .art2:hover, .art3:hover {
+    transform: scale(1.01);
+}
+footer {
+    text-align: center;
+}
+/*Agrego media queries para distintos dispositivos */
+@media (max-width:600px) {
+    section {
+        flex-direction: column;
+    }
+    .art1, .art2, .art3 {
+        background-color: #f30b0b;
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+@media (min-width:600px) and (max-width:900px) {
+    section {
+        flex-wrap: wrap;
+    }
+    .art1, .art2, .art3 {
+        background-color: #0b96f3;
+        flex: 1 1 30%;
+    }
+}
+@media (min-width:900px) {
+    .art1, .art2, .art3 {
+        background-color: #0b77f3;
+        flex: 1 1 30%; 
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-family: sans-serif;
+        background-color: #0b96f3;
+        color: white;
+        margin: 0;
+        opacity: 0;
+        transition: opacity 0.5s;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        img {
+            max-width: 100%;
+        }
+        .botonVolver {
+            display: flex;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            background-color: #0b96f3;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+        }
+        @media (min-width:900px) {
+            img {
+    max-height: 500px;
+}
+        }
+    </style>
+</head>
+<body>
+    <img src="img/indio-madryn.jpg"/>
+<a href="index.html"><button href="index.html" class="botonVolver">X</button></a>
+    <h1>Avistaje de ballenas</h1> 
+    <p>La zona de Puerto Madryn y Península Valdés está considerada como uno de los mejores lugares del mundo para ver ballenas.
+
+        Las ballenas que se pueden observar en la zona son conocidas con el nombre de ballena franca austral.
+        
+        Porqué Puerto Madryn es uno de los mejores lugares del mundo para observar ballenas:
+        
+        - Fácil acceso.
+        
+        - Cantidad de ejemplares.
+        
+        - Cercanía a la costa.
+        
+        - Posibilidad de ver hembras parir o amamantar a sus ballenatos.
+        
+        - Larga temporada de avistaje.
+        
+        - Combinación con la observación de otros mamíferos marinos.
+        
+        Cuándo es la temporada de ballenas
+        Las ballenas llegan a la costa de Puerto Madryn y Península Valdés durante el mes de mayo y se quedan para reproducirse y alimentar a los ballenatos hasta el mes de diciembre. Aunque la temporada de ballenas varía sus días cada año y no es posible saber con exactitud el momento que van a llegar y partir. También hay que tener en cuenta que las ballenas no arriban o parten todas juntas por tal motivo al principio y al final de temporada hay menos cantidad y se hace más difícil de observarlas.
+       </p>
+    <script>
+        window.addEventListener('load', function() {
+  document.body.style.opacity="1";
+});
+    </script>
+</body>
+</html>
